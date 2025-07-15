@@ -19,3 +19,6 @@ export const wagmiAdapter = new WagmiAdapter({
 })
 
 export const config = wagmiAdapter.wagmiConfig
+
+// Alias export to maintain compatibility with components expecting `wagmiConfig`
+export const wagmiConfig = config
